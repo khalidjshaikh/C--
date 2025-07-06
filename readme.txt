@@ -36,3 +36,29 @@ Is the vector empty? No
 Elements of the vector after pop_back():
 numbers[0] = 1
 numbers[1] = 2
+
+---
+
+g++ convolution-1d.c++; ./a.out
+Signal: 1 2 3 4 
+Kernel: 0.5 1 
+Convolution Result: 0.5 2 3.5 5 4 
+
+---
+
+g++ convolution-2d.c++; ./a.out
+
+Input Matrix:
+1	2	3	4	
+5	6	7	8	
+9	10	11	12	
+13	14	15	16	
+
+Kernel Matrix:
+-1	-1	-1	
+-1	8	-1	
+-1	-1	-1	
+
+Output Matrix (Convolved):
+0	0	
+0	0	
